@@ -22,13 +22,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <div class="col-12">
                 <div class="article-block">
 
-                    <div class="video-wrapper">
-                        <img src="{{ article.articleImage.path | image }}"  class="img-responsive">
+                    <div class="video-wrapper" style="position: relative;
+                    width: 100%;
+                    padding-top: 56.25%;
+                    background: url({{ article.articleImage.path | image }});
+                    overflow: hidden;
+                    background-size: cover;
+                    background-position: center;">
+                        <!-- <img src="{{ article.articleImage.path | image }}"  class="img-responsive"> -->
                         <!-- <iframe src="https://www.youtube.com/embed/OVKAOwzAwHI?controls=0" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe> -->
@@ -54,7 +60,7 @@
                     </div>
                      {% endif %}
 
-                   {{ article.articleContent | safe }}
+             <p style="font-size: 14px; line-height: 23px; letter-spacing: 0px; color: #bbbbbb;">      {{ article.articleContent | safe }} </p>
 
                 </div>
             </div>
@@ -68,20 +74,20 @@
                 <h5>related</h5>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-12">
-                <div class="content-card latest-guides-card">
+            <div class="col-md-4 col-sm-4 col-12 mob-card latest-guides-card-column">
+                <div class="content-card article-card latest-guides-card" style="    min-height: 300px;">
                     <a href="/article">
                         <div class="img-wrap">
-                            <img src="/images/image-01.jpg" class="img-fluid w-100" alt="">
+                            <img src="/images/image-01.jpg" class="img-fluid w-100 h-190px" alt="">
                         </div>
-                        <div class="content-wrap">
+                        <div class="content-wrap content-wrap190 ">
                             <h5>Lorem ipsum dolor sit amet</h5>
                             <p>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.127 19.981">
                                     <g transform="translate(-0.009)">
                                         <path id="Shape"
-                                              d="M8.563,19.981a8.563,8.563,0,1,1,0-17.126,8.693,8.693,0,0,1,5.328,1.9l1.332-1.332a18.28,18.28,0,0,1,1.427,1.332L15.223,6.089a8.1,8.1,0,0,1,1.9,5.329,8.527,8.527,0,0,1-8.563,8.563Zm0-15.223A6.59,6.59,0,0,0,1.9,11.418a6.59,6.59,0,0,0,6.661,6.66,6.589,6.589,0,0,0,6.66-6.66A6.59,6.59,0,0,0,8.563,4.757Zm.951,7.612h-1.9V6.66h1.9v5.709ZM11.418,1.9H5.709V0h5.71V1.9Z"
-                                              transform="translate(0.009)"/>
+                                        d="M8.563,19.981a8.563,8.563,0,1,1,0-17.126,8.693,8.693,0,0,1,5.328,1.9l1.332-1.332a18.28,18.28,0,0,1,1.427,1.332L15.223,6.089a8.1,8.1,0,0,1,1.9,5.329,8.527,8.527,0,0,1-8.563,8.563Zm0-15.223A6.59,6.59,0,0,0,1.9,11.418a6.59,6.59,0,0,0,6.661,6.66,6.589,6.589,0,0,0,6.66-6.66A6.59,6.59,0,0,0,8.563,4.757Zm.951,7.612h-1.9V6.66h1.9v5.709ZM11.418,1.9H5.709V0h5.71V1.9Z"
+                                        transform="translate(0.009)"/>
                                     </g>
                                 </svg>
                                 5 minutes
@@ -91,20 +97,20 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-12">
-                <div class="content-card latest-guides-card">
+            <div class="col-md-4 col-sm-4 col-12 mob-card latest-guides-card-column">
+                <div class="content-card article-card latest-guides-card" style="    min-height: 300px;">
                     <a href="/article">
                         <div class="img-wrap">
-                            <img src="/images/image-01.jpg" class="img-fluid w-100" alt="">
+                            <img src="/images/image-01.jpg" class="img-fluid w-100 h-190px" alt="">
                         </div>
-                        <div class="content-wrap">
+                        <div class="content-wrap content-wrap190 ">
                             <h5>Lorem ipsum dolor sit amet</h5>
                             <p>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.127 19.981">
                                     <g transform="translate(-0.009)">
                                         <path id="Shape"
-                                              d="M8.563,19.981a8.563,8.563,0,1,1,0-17.126,8.693,8.693,0,0,1,5.328,1.9l1.332-1.332a18.28,18.28,0,0,1,1.427,1.332L15.223,6.089a8.1,8.1,0,0,1,1.9,5.329,8.527,8.527,0,0,1-8.563,8.563Zm0-15.223A6.59,6.59,0,0,0,1.9,11.418a6.59,6.59,0,0,0,6.661,6.66,6.589,6.589,0,0,0,6.66-6.66A6.59,6.59,0,0,0,8.563,4.757Zm.951,7.612h-1.9V6.66h1.9v5.709ZM11.418,1.9H5.709V0h5.71V1.9Z"
-                                              transform="translate(0.009)"/>
+                                        d="M8.563,19.981a8.563,8.563,0,1,1,0-17.126,8.693,8.693,0,0,1,5.328,1.9l1.332-1.332a18.28,18.28,0,0,1,1.427,1.332L15.223,6.089a8.1,8.1,0,0,1,1.9,5.329,8.527,8.527,0,0,1-8.563,8.563Zm0-15.223A6.59,6.59,0,0,0,1.9,11.418a6.59,6.59,0,0,0,6.661,6.66,6.589,6.589,0,0,0,6.66-6.66A6.59,6.59,0,0,0,8.563,4.757Zm.951,7.612h-1.9V6.66h1.9v5.709ZM11.418,1.9H5.709V0h5.71V1.9Z"
+                                        transform="translate(0.009)"/>
                                     </g>
                                 </svg>
                                 5 minutes
@@ -114,20 +120,20 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-12">
-                <div class="content-card latest-guides-card">
+            <div class="col-md-4 col-sm-4 col-12 mob-card latest-guides-card-column">
+                <div class="content-card article-card latest-guides-card" style="    min-height: 300px;">
                     <a href="/article">
                         <div class="img-wrap">
-                            <img src="/images/image-01.jpg" class="img-fluid w-100" alt="">
+                            <img src="/images/image-01.jpg" class="img-fluid w-100 h-190px" alt="">
                         </div>
-                        <div class="content-wrap">
+                        <div class="content-wrap content-wrap190 ">
                             <h5>Lorem ipsum dolor sit amet</h5>
                             <p>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.127 19.981">
                                     <g transform="translate(-0.009)">
                                         <path id="Shape"
-                                              d="M8.563,19.981a8.563,8.563,0,1,1,0-17.126,8.693,8.693,0,0,1,5.328,1.9l1.332-1.332a18.28,18.28,0,0,1,1.427,1.332L15.223,6.089a8.1,8.1,0,0,1,1.9,5.329,8.527,8.527,0,0,1-8.563,8.563Zm0-15.223A6.59,6.59,0,0,0,1.9,11.418a6.59,6.59,0,0,0,6.661,6.66,6.589,6.589,0,0,0,6.66-6.66A6.59,6.59,0,0,0,8.563,4.757Zm.951,7.612h-1.9V6.66h1.9v5.709ZM11.418,1.9H5.709V0h5.71V1.9Z"
-                                              transform="translate(0.009)"/>
+                                        d="M8.563,19.981a8.563,8.563,0,1,1,0-17.126,8.693,8.693,0,0,1,5.328,1.9l1.332-1.332a18.28,18.28,0,0,1,1.427,1.332L15.223,6.089a8.1,8.1,0,0,1,1.9,5.329,8.527,8.527,0,0,1-8.563,8.563Zm0-15.223A6.59,6.59,0,0,0,1.9,11.418a6.59,6.59,0,0,0,6.661,6.66,6.589,6.589,0,0,0,6.66-6.66A6.59,6.59,0,0,0,8.563,4.757Zm.951,7.612h-1.9V6.66h1.9v5.709ZM11.418,1.9H5.709V0h5.71V1.9Z"
+                                        transform="translate(0.009)"/>
                                     </g>
                                 </svg>
                                 5 minutes

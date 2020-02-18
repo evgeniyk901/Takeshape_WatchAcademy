@@ -41,6 +41,7 @@
         title
         excerpt
         publishDate
+        _updatedAt
        articleImage {
         filename
         mimeType
